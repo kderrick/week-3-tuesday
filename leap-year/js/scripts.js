@@ -28,8 +28,8 @@ $(document).ready(function() {
     var result = leapYear(year);
 
 
-    if (year === false) {
-      alert("Lkajd;lfj");
+    if (!year) {
+      alert("Please enter a positive integer");
     }
 
 

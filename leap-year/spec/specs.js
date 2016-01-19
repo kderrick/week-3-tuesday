@@ -15,7 +15,7 @@ describe('leapYear', function() {
     expect(leapYear(2000)).to.equal(true);
   });
 
-  it("is false for a year that is not a numbers", function(){
+  it("is false for a year that is not a number", function(){
     expect(leapYear("hello")).to.equal(false);
   });
 
