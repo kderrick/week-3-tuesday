@@ -6,13 +6,13 @@ var triangleType = function(length1, length2, length3) {
             (length2 + length3) > length1 && (length2 === length3) ||
             (length1 + length3) > length2 && (length1 === length3)) {
     return "Isoceles Triangle";
-  } else if ((length1 !== length2) && (length1 !== length3) && (length2 !== length3))
+  } else if (((length1 + length2) > length3) && ((length1 + length3) > length2) && ((length2 + length3 > length1)) && (length1 !== length2) && (length1 !== length3) && (length2 !== length3))
 
              {
     return "Scalene Triangle";
   } else
 
-    return "Not a triangle";
+    return "Not a Triangle";
 
 };
 
@@ -35,3 +35,13 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+
+
+
+
+
+
+// (((lenth1 + length2) >= length3) || ((lenth1 + length3) >= length2) || ((lenth2 + length3) >= length1))

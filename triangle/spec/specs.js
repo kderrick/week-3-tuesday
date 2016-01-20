@@ -1,6 +1,6 @@
 describe("triangleType", function() {
   it("it is not a triangle when the sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side.", function () {
-    expect(triangleType(1,1,2)).to.equal('Not a triangle');
+    expect(triangleType(1,1,2)).to.equal('Not a Triangle');
   });
 
   it("it is an equilateral triangle when length1, length2 and length 3 are equal", function () {
